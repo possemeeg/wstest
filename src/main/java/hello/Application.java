@@ -47,7 +47,6 @@ public class Application {
     public JmsTemplate jmpTemplate(ConnectionFactory connectionFactory, MessageConverter messageConverter) {
       JmsTemplate template = new JmsTemplate(connectionFactory);
       template.setMessageConverter(messageConverter);
-
       return template;
     }
 
